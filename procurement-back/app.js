@@ -80,6 +80,6 @@ const AUTH = require('./routes/api/auth/auth');
 app.use('/api/auth', AUTH);
 
 const LOGIN = require('./routes/api/auth/login');
-app.use('/login', LOGIN);
+app.use('/api/login', LOGIN);
 
 module.exports = app;

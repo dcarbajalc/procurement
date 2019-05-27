@@ -4,7 +4,7 @@ const router = express.Router();
 const mysql = require ('mysql');
 // Queries para obtener informaciòn:
 const select_usuarios = 'select * from usuarios';
-select_usuario =(a) => `select * from usuarios where num = ${a}`;
+select_usuario =(a) => `select num,nom,id_rol from usuarios where num = ${a} and active = 1`;
 
 
 const connection = mysql.createConnection({
