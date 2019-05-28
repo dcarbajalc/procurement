@@ -82,4 +82,7 @@ app.use('/api/auth', AUTH);
 const LOGIN = require('./routes/api/auth/login');
 app.use('/api/login', LOGIN);
 
+const menus = require('./routes/api/menus');
+app.use('/api/menu', menus);
+
 module.exports = app;
