@@ -85,4 +85,8 @@ app.use('/api/login', LOGIN);
 const menus = require('./routes/api/menus');
 app.use('/api/menu', menus);
 
+const usuarios = require('./routes/api/usuarios/ABC');
+app.use('/api/usuarios', usuarios);
+
+
 module.exports = app;

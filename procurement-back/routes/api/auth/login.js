@@ -8,7 +8,6 @@ const usuario = require ('../../../models/Usuarios');
 
 
 
-
 router.post("/mail", (req, res) => {
   const {email, passw} = req.body;
   usuario.findAll({where:{ email: email, active: true}})
